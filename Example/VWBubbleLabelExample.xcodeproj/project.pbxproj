@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540D2F561E63F71A00247765 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D2F551E63F71A00247765 /* main.m */; };
+		540D2F591E63F71A00247765 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D2F581E63F71A00247765 /* AppDelegate.m */; };
+		540D2F5C1E63F71A00247765 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D2F5B1E63F71A00247765 /* ViewController.m */; };
+		540D2F5F1E63F71A00247765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540D2F5D1E63F71A00247765 /* Main.storyboard */; };
+		540D2F611E63F71A00247765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540D2F601E63F71A00247765 /* Assets.xcassets */; };
+		540D2F641E63F71A00247765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540D2F621E63F71A00247765 /* LaunchScreen.storyboard */; };
+		540D2F6F1E63F71A00247765 /* VWBubbleLabelExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D2F6E1E63F71A00247765 /* VWBubbleLabelExampleTests.m */; };
+		540D2F7A1E63F71A00247765 /* VWBubbleLabelExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D2F791E63F71A00247765 /* VWBubbleLabelExampleUITests.m */; };
+		540D2F8A1E63F76700247765 /* VWBubbleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D2F891E63F76700247765 /* VWBubbleLabel.m */; };
+		540D2F8C1E63F7FD00247765 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 540D2F8B1E63F7FD00247765 /* bubble.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540D2F6B1E63F71A00247765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540D2F491E63F71A00247765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540D2F501E63F71A00247765;
+			remoteInfo = VWBubbleLabelExample;
+		};
+		540D2F761E63F71A00247765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540D2F491E63F71A00247765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540D2F501E63F71A00247765;
+			remoteInfo = VWBubbleLabelExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540D2F511E63F71A00247765 /* VWBubbleLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VWBubbleLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540D2F551E63F71A00247765 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540D2F571E63F71A00247765 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		540D2F581E63F71A00247765 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		540D2F5A1E63F71A00247765 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		540D2F5B1E63F71A00247765 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		540D2F5E1E63F71A00247765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		540D2F601E63F71A00247765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		540D2F631E63F71A00247765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		540D2F651E63F71A00247765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540D2F6A1E63F71A00247765 /* VWBubbleLabelExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VWBubbleLabelExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540D2F6E1E63F71A00247765 /* VWBubbleLabelExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWBubbleLabelExampleTests.m; sourceTree = "<group>"; };
+		540D2F701E63F71A00247765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540D2F751E63F71A00247765 /* VWBubbleLabelExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VWBubbleLabelExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540D2F791E63F71A00247765 /* VWBubbleLabelExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWBubbleLabelExampleUITests.m; sourceTree = "<group>"; };
+		540D2F7B1E63F71A00247765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540D2F881E63F76700247765 /* VWBubbleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWBubbleLabel.h; sourceTree = "<group>"; };
+		540D2F891E63F76700247765 /* VWBubbleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWBubbleLabel.m; sourceTree = "<group>"; };
+		540D2F8B1E63F7FD00247765 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540D2F4E1E63F71A00247765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540D2F671E63F71A00247765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540D2F721E63F71A00247765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540D2F481E63F71A00247765 = {
+			isa = PBXGroup;
+			children = (
+				540D2F531E63F71A00247765 /* VWBubbleLabelExample */,
+				540D2F6D1E63F71A00247765 /* VWBubbleLabelExampleTests */,
+				540D2F781E63F71A00247765 /* VWBubbleLabelExampleUITests */,
+				540D2F521E63F71A00247765 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540D2F521E63F71A00247765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540D2F511E63F71A00247765 /* VWBubbleLabelExample.app */,
+				540D2F6A1E63F71A00247765 /* VWBubbleLabelExampleTests.xctest */,
+				540D2F751E63F71A00247765 /* VWBubbleLabelExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540D2F531E63F71A00247765 /* VWBubbleLabelExample */ = {
+			isa = PBXGroup;
+			children = (
+				540D2F871E63F76700247765 /* VWBubbleLabel */,
+				540D2F8B1E63F7FD00247765 /* bubble.png */,
+				540D2F571E63F71A00247765 /* AppDelegate.h */,
+				540D2F581E63F71A00247765 /* AppDelegate.m */,
+				540D2F5A1E63F71A00247765 /* ViewController.h */,
+				540D2F5B1E63F71A00247765 /* ViewController.m */,
+				540D2F5D1E63F71A00247765 /* Main.storyboard */,
+				540D2F601E63F71A00247765 /* Assets.xcassets */,
+				540D2F621E63F71A00247765 /* LaunchScreen.storyboard */,
+				540D2F651E63F71A00247765 /* Info.plist */,
+				540D2F541E63F71A00247765 /* Supporting Files */,
+			);
+			path = VWBubbleLabelExample;
+			sourceTree = "<group>";
+		};
+		540D2F541E63F71A00247765 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540D2F551E63F71A00247765 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		540D2F6D1E63F71A00247765 /* VWBubbleLabelExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				540D2F6E1E63F71A00247765 /* VWBubbleLabelExampleTests.m */,
+				540D2F701E63F71A00247765 /* Info.plist */,
+			);
+			path = VWBubbleLabelExampleTests;
+			sourceTree = "<group>";
+		};
+		540D2F781E63F71A00247765 /* VWBubbleLabelExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				540D2F791E63F71A00247765 /* VWBubbleLabelExampleUITests.m */,
+				540D2F7B1E63F71A00247765 /* Info.plist */,
+			);
+			path = VWBubbleLabelExampleUITests;
+			sourceTree = "<group>";
+		};
+		540D2F871E63F76700247765 /* VWBubbleLabel */ = {
+			isa = PBXGroup;
+			children = (
+				540D2F881E63F76700247765 /* VWBubbleLabel.h */,
+				540D2F891E63F76700247765 /* VWBubbleLabel.m */,
+			);
+			path = VWBubbleLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540D2F501E63F71A00247765 /* VWBubbleLabelExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540D2F7E1E63F71A00247765 /* Build configuration list for PBXNativeTarget "VWBubbleLabelExample" */;
+			buildPhases = (
+				540D2F4D1E63F71A00247765 /* Sources */,
+				540D2F4E1E63F71A00247765 /* Frameworks */,
+				540D2F4F1E63F71A00247765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VWBubbleLabelExample;
+			productName = VWBubbleLabelExample;
+			productReference = 540D2F511E63F71A00247765 /* VWBubbleLabelExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540D2F691E63F71A00247765 /* VWBubbleLabelExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540D2F811E63F71A00247765 /* Build configuration list for PBXNativeTarget "VWBubbleLabelExampleTests" */;
+			buildPhases = (
+				540D2F661E63F71A00247765 /* Sources */,
+				540D2F671E63F71A00247765 /* Frameworks */,
+				540D2F681E63F71A00247765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540D2F6C1E63F71A00247765 /* PBXTargetDependency */,
+			);
+			name = VWBubbleLabelExampleTests;
+			productName = VWBubbleLabelExampleTests;
+			productReference = 540D2F6A1E63F71A00247765 /* VWBubbleLabelExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		540D2F741E63F71A00247765 /* VWBubbleLabelExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540D2F841E63F71A00247765 /* Build configuration list for PBXNativeTarget "VWBubbleLabelExampleUITests" */;
+			buildPhases = (
+				540D2F711E63F71A00247765 /* Sources */,
+				540D2F721E63F71A00247765 /* Frameworks */,
+				540D2F731E63F71A00247765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540D2F771E63F71A00247765 /* PBXTargetDependency */,
+			);
+			name = VWBubbleLabelExampleUITests;
+			productName = VWBubbleLabelExampleUITests;
+			productReference = 540D2F751E63F71A00247765 /* VWBubbleLabelExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540D2F491E63F71A00247765 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = voicewitness;
+				TargetAttributes = {
+					540D2F501E63F71A00247765 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					540D2F691E63F71A00247765 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 540D2F501E63F71A00247765;
+					};
+					540D2F741E63F71A00247765 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 540D2F501E63F71A00247765;
+					};
+				};
+			};
+			buildConfigurationList = 540D2F4C1E63F71A00247765 /* Build configuration list for PBXProject "VWBubbleLabelExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 540D2F481E63F71A00247765;
+			productRefGroup = 540D2F521E63F71A00247765 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540D2F501E63F71A00247765 /* VWBubbleLabelExample */,
+				540D2F691E63F71A00247765 /* VWBubbleLabelExampleTests */,
+				540D2F741E63F71A00247765 /* VWBubbleLabelExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540D2F4F1E63F71A00247765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D2F641E63F71A00247765 /* LaunchScreen.storyboard in Resources */,
+				540D2F8C1E63F7FD00247765 /* bubble.png in Resources */,
+				540D2F611E63F71A00247765 /* Assets.xcassets in Resources */,
+				540D2F5F1E63F71A00247765 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540D2F681E63F71A00247765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540D2F731E63F71A00247765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540D2F4D1E63F71A00247765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D2F5C1E63F71A00247765 /* ViewController.m in Sources */,
+				540D2F591E63F71A00247765 /* AppDelegate.m in Sources */,
+				540D2F561E63F71A00247765 /* main.m in Sources */,
+				540D2F8A1E63F76700247765 /* VWBubbleLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540D2F661E63F71A00247765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D2F6F1E63F71A00247765 /* VWBubbleLabelExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540D2F711E63F71A00247765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D2F7A1E63F71A00247765 /* VWBubbleLabelExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540D2F6C1E63F71A00247765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540D2F501E63F71A00247765 /* VWBubbleLabelExample */;
+			targetProxy = 540D2F6B1E63F71A00247765 /* PBXContainerItemProxy */;
+		};
+		540D2F771E63F71A00247765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540D2F501E63F71A00247765 /* VWBubbleLabelExample */;
+			targetProxy = 540D2F761E63F71A00247765 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540D2F5D1E63F71A00247765 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540D2F5E1E63F71A00247765 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		540D2F621E63F71A00247765 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540D2F631E63F71A00247765 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540D2F7C1E63F71A00247765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		540D2F7D1E63F71A00247765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		540D2F7F1E63F71A00247765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VWBubbleLabelExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.vwbubblelabelex.VWBubbleLabelExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		540D2F801E63F71A00247765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VWBubbleLabelExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.vwbubblelabelex.VWBubbleLabelExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		540D2F821E63F71A00247765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VWBubbleLabelExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.vwbubblelabelex.VWBubbleLabelExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VWBubbleLabelExample.app/VWBubbleLabelExample";
+			};
+			name = Debug;
+		};
+		540D2F831E63F71A00247765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VWBubbleLabelExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.vwbubblelabelex.VWBubbleLabelExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VWBubbleLabelExample.app/VWBubbleLabelExample";
+			};
+			name = Release;
+		};
+		540D2F851E63F71A00247765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VWBubbleLabelExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.vwbubblelabelex.VWBubbleLabelExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VWBubbleLabelExample;
+			};
+			name = Debug;
+		};
+		540D2F861E63F71A00247765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VWBubbleLabelExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.vwbubblelabelex.VWBubbleLabelExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VWBubbleLabelExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540D2F4C1E63F71A00247765 /* Build configuration list for PBXProject "VWBubbleLabelExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540D2F7C1E63F71A00247765 /* Debug */,
+				540D2F7D1E63F71A00247765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540D2F7E1E63F71A00247765 /* Build configuration list for PBXNativeTarget "VWBubbleLabelExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540D2F7F1E63F71A00247765 /* Debug */,
+				540D2F801E63F71A00247765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540D2F811E63F71A00247765 /* Build configuration list for PBXNativeTarget "VWBubbleLabelExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540D2F821E63F71A00247765 /* Debug */,
+				540D2F831E63F71A00247765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540D2F841E63F71A00247765 /* Build configuration list for PBXNativeTarget "VWBubbleLabelExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540D2F851E63F71A00247765 /* Debug */,
+				540D2F861E63F71A00247765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540D2F491E63F71A00247765 /* Project object */;
+}
