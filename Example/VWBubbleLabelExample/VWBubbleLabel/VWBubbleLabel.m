@@ -20,6 +20,8 @@
 @property (nonatomic, weak) NSLayoutConstraint *textTrailingConstraint;
 @property (nonatomic, weak) NSLayoutConstraint *textHeightConstraint;
 @property (nonatomic, weak) NSLayoutConstraint *textWidthConstraint;
+@property (nonatomic, strong) NSLayoutConstraint *labelAlignLeftConstraint;
+@property (nonatomic, strong) NSLayoutConstraint *labelAlignRightConstraint;
 
 @property (nonatomic, assign) CGSize textSize;
 
@@ -66,6 +68,8 @@
     self.textBottomConstraint = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.bubbleImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:-self.textInset.bottom];
     self.textWidthConstraint = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
     self.textHeightConstraint = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
+    self.labelAlignLeftConstraint = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+    self.labelAlignRightConstraint = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
 }
 
 - (void)initUI
@@ -75,7 +79,7 @@
     [self addSubview:self.textLabel];
     self.bubbleImageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.textLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.bubbleImageView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
+    [self addConstraint:self.labelAlignLeftConstraint];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.bubbleImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
     [self addConstraint:self.textTopConstraint];
     [self addConstraint:self.textBottomConstraint];
@@ -93,6 +97,13 @@
     self.textBottomConstraint.constant = -self.textInset.bottom;
     self.textWidthConstraint.constant = (self.textMode == VWBubbleLabelTextModeFixedWidth||self.textMode == VWBubbleLabelTextModeFixedSize)?self.maxWidth:self.textSize.width;
     self.textHeightConstraint.constant = (self.textMode == VWBubbleLabelTextModeFixedHeight||self.textMode == VWBubbleLabelTextModeFixedSize)?self.maxHeight:self.textSize.height;
+    if (self.labelAlignment == VWBubbleLabelAlignmentLeft) {
+        [self removeConstraint:self.labelAlignRightConstraint];
+        [self addConstraint:self.labelAlignLeftConstraint];
+    } else {
+        [self removeConstraint:self.labelAlignLeftConstraint];
+        [self addConstraint:self.labelAlignRightConstraint];
+    }
     [super updateConstraints];
     
 }
@@ -165,6 +176,11 @@
 - (void)setTextMode:(VWBubbleLabelTextMode)textMode
 {
     _textMode = textMode;
+    [self setNeedsUpdateConstraints];
+}
+
+- (void)setLabelAlignment:(VWBubbleLabelAlignment)labelAlignment {
+    _labelAlignment = labelAlignment;
     [self setNeedsUpdateConstraints];
 }
 
