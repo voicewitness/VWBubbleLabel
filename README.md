@@ -2,7 +2,7 @@ VWBubbleLabel
 ==============
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/voicewitness/VWBubbleLabel/blob/master/LICENSE)&nbsp;
 [![CocoaPods](https://img.shields.io/cocoapods/v/VWBubbleLabel.svg?style=flat)](http://cocoapods.org/?q=VWBubbleLabel)&nbsp;
-[![Support](https://img.shields.io/badge/support-iOS%206%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
+[![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 
 This is a bubble label often used in chat list. After define the unstretchable part of your bubble image then you can use it just like a label. All details in example project.
 
